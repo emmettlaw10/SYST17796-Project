@@ -75,7 +75,7 @@ public class Shoe {
     }
 
     /**
-     * function to empty the shoe so it can be refilled
+     * function to empty the shoe so it can be refilledSho
      */
     public void emptyShoe() {
         theShoe.clear();

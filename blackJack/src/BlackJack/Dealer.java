@@ -8,7 +8,4 @@ package BlackJack;
 public class Dealer {
     Hand dealerHand = new Hand();
 
-    public void dealerPlay () {
-
-    }
 }
