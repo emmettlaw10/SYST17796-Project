@@ -5,5 +5,5 @@ Emmett Law's project files for SYST 17796
 
 Requires Javafx sdk 16
 
-![image](/screenshots/ss1.png)
+![image](blackjack ss/ss1.png)
 
