@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BlackJack.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="651.0" prefWidth="948.0" style="-fx-background-color: green;">
+         <children>
+            <ImageView fx:id="p1" fitHeight="187.0" fitWidth="148.0" layoutX="34.0" layoutY="401.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="p2" fitHeight="187.0" fitWidth="148.0" layoutX="181.0" layoutY="401.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="p3" fitHeight="187.0" fitWidth="148.0" layoutX="333.0" layoutY="401.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="p4" fitHeight="187.0" fitWidth="148.0" layoutX="484.0" layoutY="401.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="p5" fitHeight="187.0" fitWidth="148.0" layoutX="633.0" layoutY="401.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="d1" fitHeight="187.0" fitWidth="148.0" layoutX="34.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="d2" fitHeight="187.0" fitWidth="148.0" layoutX="181.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="d3" fitHeight="187.0" fitWidth="148.0" layoutX="333.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="d4" fitHeight="187.0" fitWidth="148.0" layoutX="484.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="d5" fitHeight="187.0" fitWidth="148.0" layoutX="633.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true" />
+            <Button fx:id="hit" disable="true" layoutX="768.0" layoutY="291.0" mnemonicParsing="false" onAction="#hitCard" prefHeight="35.0" prefWidth="62.0" text="Hit" />
+            <Button fx:id="stand" disable="true" layoutX="860.0" layoutY="291.0" mnemonicParsing="false" onAction="#standing" prefHeight="35.0" prefWidth="62.0" text="Stand" />
+            <Button fx:id="doubleDown" disable="true" layoutX="801.0" layoutY="341.0" mnemonicParsing="false" onAction="#doubling" text="Double Down" />
+            <Label layoutX="781.0" layoutY="534.0" text="Player Score">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="pScore" alignment="CENTER" layoutX="815.0" layoutY="569.0" prefHeight="46.0" prefWidth="62.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="798.0" layoutY="460.0" prefHeight="35.0" prefWidth="96.0" text="Balance">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="balance" alignment="CENTER" layoutX="795.0" layoutY="495.0" prefHeight="46.0" prefWidth="102.0" text="5000">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="bet" layoutX="875.0" layoutY="382.0" mnemonicParsing="false" onAction="#bet" prefHeight="25.0" prefWidth="45.0" text="Bet" />
+            <TextField fx:id="betInput" layoutX="782.0" layoutY="382.0" prefHeight="25.0" prefWidth="96.0" text="0" />
+            <Label fx:id="message" alignment="CENTER" layoutX="1.0" layoutY="297.0" prefHeight="46.0" prefWidth="761.0" text="Please Place Your bet." textFill="#c61010">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="59.0" layoutY="359.0" prefHeight="35.0" prefWidth="160.0" text="Player hand">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="587.0" layoutY="243.0" prefHeight="35.0" prefWidth="148.0" text="Dealer Hand">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="782.0" layoutY="33.0" text="Dealer Score">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="dScore" alignment="CENTER" layoutX="815.0" layoutY="68.0" prefHeight="46.0" prefWidth="62.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="restart" disable="true" layoutX="322.0" layoutY="261.0" mnemonicParsing="false" onAction="#restartGame" opacity="0.0" prefHeight="35.0" prefWidth="120.0" text="Play Again" />
+            <ImageView fx:id="hide" fitHeight="187.0" fitWidth="148.0" layoutX="181.0" layoutY="50.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/blue_back.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
